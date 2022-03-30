@@ -22,8 +22,8 @@ namespace Tree
         public string AsStringTwo()
         {
             Size = Size % 2 == 0 ? Size + 1 : Size;
-            int level = Size / 2 + 1;
-            string format = "{0," + level.ToString() + "}" + "{1," + "-" + level.ToString() + "}";
+            var level = Size / 2 + 1;
+            var format = "{0," + level.ToString() + "}" + "{1," + "-" + level.ToString() + "}";
             var sb = new StringBuilder("");
             for (int i = 1; i <= level; i++)
             {
